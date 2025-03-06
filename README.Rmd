@@ -26,9 +26,6 @@ This repository contains the script **`nlp_10000_most_recent_2025.py`**, which r
 ## **1. Set Up Environment**
 Run the following **Bash script** to create a **Miniconda** environment and install dependencies:
 
-`chmod +x setup_nlp_env.sh`
-
-
 ```{bash setup, eval=FALSE, include=TRUE}
 #!/bin/bash
 
