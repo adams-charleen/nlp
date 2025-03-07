@@ -64,11 +64,12 @@ python3 -c "import accelerate; print('Accelerate loaded successfully')" || { ech
 conda activate myenv
 
 # Run NLP script in the background with logging
-echo "### Running nlp.py in the background ###"
-nohup python3 nlp.py > output.log 2>&1 &
+echo "### Running nlp_10000_most_recent_2025.py in the background ###"
+nohup python3 nlp_10000_most_recent_2025.py > nlp_10000_most_recent_2025.log 2>&1 &
 
 # Monitor running processes
 echo "### Monitoring process ###"
-ps aux | grep nlp.py
+ps aux | grep nlp_10000_most_recent_2025.py
 
 echo "### Setup complete! ###"
+nlp/README.md at master · adams-charleen/nlp 
