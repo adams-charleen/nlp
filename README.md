@@ -21,10 +21,11 @@ This repository contains the script **`nlp_10000_most_recent_2025.py`**, which r
   - Logs each step in **`nlp_run_10000_2025.log`**.
   - Implements **retry mechanisms** for API requests.
 
-## Installation
+## Installation and running
 
-## **1. Set Up Environment**
-Run the following **Bash script** to create a **Miniconda** environment and install dependencies:
+Run the following **Bash script** to create a **Miniconda** environment, install dependencies, and run.
+Alternately, one could create the Miniconda environment, install dependences, and then run in the background with a log file with: 
+`nohup python3 nlp_10000_most_recent_2025.py > nlp_10000_most_recent_2025.log 2>&1 &`
 
 ```{bash setup, eval=FALSE, include=TRUE}
 #!/bin/bash
@@ -93,7 +94,7 @@ python3 -c "import accelerate; print('Accelerate loaded successfully')" || { ech
 conda activate myenv
 
 # Run NLP script in the background with logging
-echo "### Running nlp.py in the background ###"
+echo "### Running nlp_10000_most_recent_2025.py in the background ###"
 nohup python3 nlp_10000_most_recent_2025.py > nlp_10000_most_recent_2025.log 2>&1 &
 
 # Monitor running processes
