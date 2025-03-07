@@ -99,7 +99,7 @@ nohup python3 nlp_10000_most_recent_2025.py > nlp_10000_most_recent_2025.log 2>&
 
 # Monitor running processes
 echo "### Monitoring process ###"
-ps aux | grep nlp.py
+ps aux | grep nlp_10000_most_recent_2025.py
 
 echo "### Setup complete! ###"
 ```
