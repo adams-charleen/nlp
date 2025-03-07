@@ -1,4 +1,8 @@
-# Overview
+## Beta Version
+
+While the scripts here do find, label, and rank recent cardiometabolic papers, I plan to refine the model. As such, it works, and I'll make it better.
+
+## Overview
 
 This project automates the retrieval, classification, and analysis of recent biomedical research using artificial intelligence (AI). Specifically, it searches PubMed for the 10,000 most recent articles (from 2025 onward) related to cardiometabolic diseases, genetic risk factors, and causal mechanisms, then labels and fine-tunes a BioBERT model to classify abstracts based on their relevance to genetic causation. The AI model used here is BioBERT, a transformer-based deep learning model designed for biomedical text mining. BioBERT is a variant of BERT (Bidirectional Encoder Representations from Transformers), a state-of-the-art natural language processing (NLP) model that learns contextual relationships between words in medical literature. The script applies deep learning to process text, identify key biomedical concepts, and classify research abstracts as causally relevant or not. This automated pipeline is valuable for biomedical researchers, clinicians, and data scientists who need to quickly find, analyze, and prioritize research papers without manually sifting through thousands of publications.
 
